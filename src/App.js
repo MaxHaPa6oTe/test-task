@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import AesEncryptor from "./AesEncryptor";
+import Balance from "./Balance";
+import ButtonSHA from "./ButtonSHA";
+import Decoding from "./Decoding";
+import DocPanel from "./DocPannel";
+import DocPanel2 from "./DocPannel2";
+import ERC20 from "./ERC20";
+import MetaMask from "./MetaMask";
+import Transaction from "./Transaction";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+     <MetaMask />
+     <ButtonSHA />
+     <DocPanel />
+     <AesEncryptor />
+     <Decoding />
+     <DocPanel2 />
+     <Balance />
+     <Transaction />
+     <ERC20 />
     </div>
   );
 }
